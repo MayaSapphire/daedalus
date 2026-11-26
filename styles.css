@@ -1,0 +1,55 @@
+body {
+  font-family:Arial, Helvetica, sans-serif
+}
+
+/* Lastclick Checker */
+.map {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+/* Notes */
+.notes {
+  margin-top: 60px;
+}
+
+
+/* SVG */
+svg {
+  background: #666;
+  width: 340px;
+  height: 680px;
+  margin: 0 auto;
+  /* The following code seems to fix blurry stuffs that happens in firefox */
+  transform: scale(1, 1);
+}
+
+
+/* Rooms */
+svg .room {
+  fill: #eee;
+  stroke: #000;
+  stroke-width: 1;
+}
+svg .room:hover { fill: #CCC; }
+svg .room.active { fill: #AAA; }
+
+svg .room-label {
+  fill: #333;
+  font-size: 14px;
+  font-weight: 600;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  pointer-events: none;
+}
+
+
+/* Doors */
+svg .door {
+  fill: none;
+  stroke-linecap: square;
+  stroke:#0D0;
+  stroke-width: 3;
+}
