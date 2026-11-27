@@ -268,10 +268,10 @@ const roomDefinitions = [
   { id: "fat", name: "Front Alpha Turret", doors: ["brd", "fc"] },
   { id: "fc", name: "Front Corridor", doors: ["brd", "fbt", "fat", "lab", "hg", "ml", "fs", "cc"] },
   { id: "lab", name: "Laboratory", doors: ["fc", "ml"] },
-  { id: "hg", name: "Hydroponic Garden", doors: ["fc", "fs"] },
+  { id: "hg", name: "Hydroponic Garden", doors: ["fc", "fs", "cbt"] },
   { id: "ml", name: "Medlab", doors: ["fc", "lab"] },
   { id: "fs", name: "Front Storage", doors: ["fc", "hg", "cat"] },
-  { id: "cbt", name: "Central Bravo Turret", doors: ["bb"] },
+  { id: "cbt", name: "Central Bravo Turret", doors: ["bb", "ml"] },
   { id: "cat", name: "Central Alpha Turret", doors: ["fs", "ab"] },
   { id: "bb", name: "Bravo Bay", doors: ["cbt", "cc", "cbs", "bd", "rc"] },
   { id: "cc", name: "Central Corridor", doors: ["fc", "bb", "ab", "rf"] },
@@ -283,12 +283,12 @@ const roomDefinitions = [
   { id: "nx", name: "Nexus", doors: ["rc"] },
   { id: "ad", name: "Alpha Dorm", doors: ["ab", "rc"] },
   { id: "rc", name: "Rear Corridor", doors: ["bb", "bd", "nx", "ad", "ab2", "ib", "rbs", "ras"] },
-  { id: "ab2", name: "Alpha Bay 2", doors: ["ab", "rc", "ras", "rat"] },
+  { id: "ab2", name: "Alpha Bay 2", doors: ["ab", "rc", "ras", "rat", "er"] },
   { id: "ib", name: "Icarus Bay", doors: ["rc", "rbt", "er"] },
   { id: "rbs", name: "Rear Bravo Storage", doors: ["rc", "er"] },
-  { id: "ras", name: "Rear Alpha Storage", doors: ["rc", "ab2", "er"] },
+  { id: "ras", name: "Rear Alpha Storage", doors: ["rc", "er"] },
   { id: "rbt", name: "Rear Bravo Turret", doors: ["ib", "er"] },
-  { id: "er", name: "Engine Room", doors: ["ib", "rbs", "ras", "rbt", "rat"] },
+  { id: "er", name: "Engine Room", doors: ["ib", "rbs", "ras", "rbt", "rat", "ab2"] },
   { id: "rat", name: "Rear Alpha Turret", doors: ["ab2", "er"] }
 ];
 
