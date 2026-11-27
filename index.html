@@ -10,7 +10,7 @@
     <header></header>
     <main>
       <div id="map">
-        <svg width="340" height="680" >
+        <svg width="340" height="680" onclick="onMapBackgroundClick(event)">
           <path d="m139.5 10.5 0 20-20 0 0 60 100 0 0-60-20 0 0-20-60 0z" class="room" id="brdRoom" onclick="onRoomClick('brd')" />
           <rect width="40" height="40" x="79.5" y="50.5" class="room" id="fbtRoom" onclick="onRoomClick('fbt')" />
           <rect width="40" height="40" x="219.5" y="50.5" class="room" id="fatRoom" onclick="onRoomClick('fat')" />
@@ -42,7 +42,7 @@
           <text x="169.5" y="60.5" class="room-label">brd</text>
           <text x="99.5" y="70.5" class="room-label">fbt</text>
           <text x="239.5" y="70.5" class="room-label">fat</text>
-          <text x="169.5" y="100.5" class="room-label">fc</text>
+          <text x="169.5" y="105.5" class="room-label">fc</text>
           <text x="119.5" y="150.5" class="room-label">lab</text>
           <text x="219.5" y="150.5" class="room-label">hg</text>
           <text x="119.5" y="230.5" class="room-label">ml</text>
@@ -111,9 +111,11 @@
           
         </svg>
       </div>
-      <p id="selectedRoomInfo" hidden>Selected: 
-        <b id="selectedRoom"></b>
+      <p id="selectedInfo" hidden>Selected: 
+        <b id="selected"></b>
       </p>
+      <div id="selectedActions"></div>
+      <button class="action-button" onclick="spawnRoland()">Spawn Roland</button>
     </main>
     <footer></footer>
   </body>
